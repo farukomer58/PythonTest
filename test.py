@@ -1,0 +1,8 @@
+print("Made By Omer \n")
+print("   *   ")
+print("  **   ")
+print("  ***  ")
+print(" ****  ")
+print(" ***** ")
+print("****** ")
+print("*" * 7)
