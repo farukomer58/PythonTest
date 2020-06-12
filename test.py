@@ -1,4 +1,11 @@
-name = input("What is your name? ")
-favColor = input("What is your favorite color? ")
+CONVERSION = 0.45359237
 
-print("Hello "+ name + " your favorite color is " + favColor )
+weight = input("What is your weight in Pounds? ")
+weightKilograms = float(weight) * CONVERSION
+
+#weightType = type(weight)
+#weightTypeKilograms = type(weightKilograms)
+#print(weightType)
+#print(weightTypeKilograms)
+
+print("You weight in kilograms(kg) is: " + str(weightKilograms))
