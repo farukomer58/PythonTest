@@ -1,6 +1,12 @@
-first = "Omer"
-last = "Citik"
+course = "Python for beginners"
 
-msg = f"{first} [{last}] is idk, this is a formatted string."
+stringLenght = len(course)
+stringFun = course.upper()
+stringFun2 = course.lower()
+stringFun3 = course.find("for") # returns the index where he finds for the first time
+stringFun4 = course.replace("beginners", "absolute beginners")
+stringFun5 = course.title() # Make each first word uppercase
+stringCheck = "Python" in course
 
-print(msg)
+
+
