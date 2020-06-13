@@ -8,5 +8,5 @@ stringFun4 = course.replace("beginners", "absolute beginners")
 stringFun5 = course.title() # Make each first word uppercase
 stringCheck = "Python" in course
 
-
+print(stringFun5)
 
