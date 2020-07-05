@@ -1,8 +1,12 @@
-name = "Jonge"
+weight = float(input("Weight: "))
+lbs_or_kgs = input("(L)bs or (K)gs ")
 
-if len(name) < 3:
-    print("Name must be at least 3 characters")
-elif len(name) > 50:
-    print("Name must be lower than 50 characters")
+if lbs_or_kgs.upper() == "L":
+    convertedWeight =  weight * 0.45359
+    print(f"You weight {convertedWeight} Kilograms")
+elif lbs_or_kgs.upper() == "K":
+    convertedWeight = weight /  0.45359
+    print(f"You weight {convertedWeight} Pounds")
 else:
-    print("Name looks good")
+    print("Type either L or K")
+
