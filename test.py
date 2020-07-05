@@ -1,7 +1,8 @@
-import math
+name = "Jonge"
 
-x = 3.9
-print(math.pow(2,3))
-print(2 ** 3)
-print(round(x))
-print(abs(-9.9))
+if len(name) < 3:
+    print("Name must be at least 3 characters")
+elif len(name) > 50:
+    print("Name must be lower than 50 characters")
+else:
+    print("Name looks good")
