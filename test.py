@@ -1,12 +1,11 @@
-weight = float(input("Weight: "))
-lbs_or_kgs = input("(L)bs or (K)gs ")
+secretNumber =9
+attemps = 0
 
-if lbs_or_kgs.upper() == "L":
-    convertedWeight =  weight * 0.45359
-    print(f"You weight {convertedWeight} Kilograms")
-elif lbs_or_kgs.upper() == "K":
-    convertedWeight = weight /  0.45359
-    print(f"You weight {convertedWeight} Pounds")
+while attemps < 3:
+    guess = int(input("Guess: "))
+    attemps += 1
+    if guess == secretNumber:
+        print("Good Job you got it")
+        break
 else:
-    print("Type either L or K")
-
+    print("Sorry, you failled")
