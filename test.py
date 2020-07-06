@@ -1,7 +1,11 @@
-numbers = [5,8,3,6,2,19,22,13]
-greatest = 0
+list = [
+    [1,2,3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
-for n in numbers:
-    if n > greatest:
-        greatest = n
-print(greatest)
+for i in list:
+    row = ""
+    for z in i:
+        row += f'{z} '
+    print(row)
