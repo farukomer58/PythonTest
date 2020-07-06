@@ -1,7 +1,7 @@
-numbers = [2,2,2,2,5]
+numbers = [5,8,3,6,2,19,22,13]
+greatest = 0
 
-for x in numbers:
-    line = ""
-    for nest in range(x):
-        line += "x"
-    print(line)
+for n in numbers:
+    if n > greatest:
+        greatest = n
+print(greatest)
