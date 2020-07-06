@@ -1,11 +1,7 @@
-list = [
-    [1,2,3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+list = [4,5,5,5,5,3,2,9,2]
+uniqueList = []
 
-for i in list:
-    row = ""
-    for z in i:
-        row += f'{z} '
-    print(row)
+for number in list:
+    if number not in uniqueList:
+        uniqueList.append(number)
+print(uniqueList)
