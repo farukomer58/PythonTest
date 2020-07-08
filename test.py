@@ -1,10 +1,13 @@
-customer = {
-    "name" : "Omer Citik",
-    "age" : 100,
-    "is_good": True
+number = input("Number: ")
+numbersDictonarie = {
+    "1" : "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four"
 }
 
-customer["idk"] = "new Value"
-print(customer["name"])
-print(customer["idk"])
-print(customer.get("birthday", "01-02-1999"))
+outputString = ""
+for ch in number:
+    outputString += numbersDictonarie.get(ch,"!") + " "
+
+print(outputString)
