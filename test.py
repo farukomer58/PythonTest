@@ -1,13 +1,13 @@
-number = input("Number: ")
-numbersDictonarie = {
-    "1" : "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four"
+message = input(">")
+splittedMessage = message.split(" ")
+
+emojis = {
+    ":)" : "😂",
+    ":(" : "😢"
 }
 
-outputString = ""
-for ch in number:
-    outputString += numbersDictonarie.get(ch,"!") + " "
+finalMessage = ""
+for word in splittedMessage:
+    finalMessage += emojis.get(word,word) + " "
 
-print(outputString)
+print(finalMessage)
